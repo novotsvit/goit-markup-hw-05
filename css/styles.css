@@ -340,7 +340,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 6px 28px;
-
+ 
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -650,7 +650,7 @@ img {
 
   background-color: var(--thumb-overley-bg-color);
   transform: translateY(+100%);
-  transition-property: background-color, color, transform;
+  transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -679,14 +679,10 @@ img {
 
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.1, 1.1) ;
-  background-color: rgba(5, 98, 126, 0.797);
-  border-radius: 5%;
-  border: 5px solid rgba(117, 149, 149, 0.801);
-  box-shadow: 15px 15px 35px rgb(243, 240, 240)
+  transform: translate(-50%, -50%);
 }
 .modal {
   position: absolute;
@@ -700,8 +696,8 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transform: translate(-50%, -50%) scale(1);
-  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-50%, -50%);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-close {
